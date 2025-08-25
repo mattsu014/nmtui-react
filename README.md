@@ -1,5 +1,7 @@
 # nmtui-react
 
+⚠️ **Work in Progress – Project is not functional yet**
+
 A **minimalist and modern interface**, built with **TypeScript**, to facilitate network connection management using `nmtui`.
 
 `nmtui-react` does not replace `NetworkManager` or `nmtui`.  
