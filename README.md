@@ -48,7 +48,7 @@ The main features include:
 - Manage system identification
 
 ### 🛡️ VPN - NordVPN
-![NordVPN Logo](https://1000logos.net/wp-content/uploads/2022/08/NordVPN-Logo.png)
+![NordVPN Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lidqr1141nm6qeqsti3p.png)
 
 This project integrates VPN management using the **NordVPN client**.  
 The planned features include:
