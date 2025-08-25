@@ -47,10 +47,17 @@ The main features include:
 - Configure device name on the network
 - Manage system identification
 
-### 🛡️ VPN (not started)
-- Complete VPN interface with server selection
-- Secure connection to different locations
-- Visual VPN connection status
+### 🛡️ VPN - NordVPN
+![NordVPN Logo](https://1000logos.net/wp-content/uploads/2022/08/NordVPN-Logo.png)
+
+This project integrates VPN management using the **NordVPN client**.  
+The planned features include:
+
+- Full VPN interface with server selection  
+- Secure connection to different locations  
+- Visual VPN connection status directly in the UI  
+- Seamless integration with the existing network management system  
+
 
 ### ⚙️ Customization
 - Toggle between light/dark/system themes
