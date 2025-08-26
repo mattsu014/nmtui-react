@@ -87,6 +87,5 @@ npm run dev
 ```
 ### Run Desktop App (Tauri + Next.js)
 ```bash
-cd src-tauri
 cargo tauri dev
 ```
