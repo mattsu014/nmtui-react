@@ -1,6 +1,6 @@
 const { exec } = require('child_process');
 
-const scanWifiNetworks = () => {
+const ScanWifiNetworks = () => {
   return new Promise((resolve, reject) => {
     exec('nmcli -t -f IN-USE,BSSID,SSID,MODE,CHAN,RATE,SIGNAL,BARS,SECURITY device wifi list', (error, stdout, stderr) => {
       if (error) {
@@ -31,11 +31,11 @@ const parseNetworks = (stdout) => {
       const network = {
         inUse: columns[0] === '*',
         bssid: `${columns[1]}:${columns[2]}:${columns[3]}:${columns[4]}:${columns[5]}:${columns[6]}`,
-        ssid: columns[7],
+        name: columns[7],
         mode: columns[8],
         channel: columns[9],
         rate: columns[10],
-        signal: columns[11],
+        signalStrength: columns[11],
         bars: columns[12],
         security: columns[13] || ''
       };
@@ -51,7 +51,7 @@ const parseNetworks = (stdout) => {
 
 (async () => {
   try {
-    const networks = await scanWifiNetworks();
+    const networks = await ScanWifiNetworks();
     console.log(networks);
   } catch (error) {
     console.error(error);

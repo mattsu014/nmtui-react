@@ -1,7 +1,7 @@
 const { exec } = require('child_process');
 
 const CreateNewConnection = (SSI, password, type) => {
-    if(type == "wifi") {
+    if(type == "Wifi") {
         return new Promise((resolve, reject) => {
             exec(`nmcli device wifi connect ${SSI} password ${password}`, (error, stdout, stderr) => {
                 if (error) {

@@ -31,3 +31,8 @@ const NewHostname = (hostname) => {
         });
     }); 
 };
+
+module.exports = {
+    CurrentHostname,
+    NewHostname
+};
