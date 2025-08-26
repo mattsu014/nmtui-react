@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'NetWork Manager app',
+  title: 'Network Manager',
   description: 'Network Manager and VPN',
 }
 

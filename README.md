@@ -2,16 +2,16 @@
 
 ⚠️ **Work in Progress – Project is not functional yet**
 
-A **minimalist and modern interface**, built with **TypeScript**, to facilitate network connection management using `nmtui`.
+A **minimalist and modern desktop interface**, built with **React.js** and **TypeScript**, to facilitate network connection management using `nmtui`.
 
-`nmtui-react` does not replace `NetworkManager` or `nmtui`.  
+`nmtui-react` does **not** replace `NetworkManager` or `nmtui`.  
 It simply provides a **clean, responsive, and intuitive UI** to enhance the user experience.
 
 ---
 
 ## 📷 Screenshots
 
-### Home Screen - Light Theme
+### Home Screen – Light Theme
 ![Home light theme](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/mgkzqrygh044l6z689kh.png)
 
 ### Network Connection Screen
@@ -20,54 +20,73 @@ It simply provides a **clean, responsive, and intuitive UI** to enhance the user
 ### Settings Screen (Language and Theme)
 ![Settings screen](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r5w46lf1r5i61ehqr7wf.png)
 
-### Home Screen - Light Theme (Alternative)
+### Home Screen – Alternative Light Theme
 ![Home light theme](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bdna5azsefnq3qr5oxfs.png)
 
 ---
 
 ## 📖 Project Description
 
-This program is a visual desktop interface for network connection management with a **minimalist interface** that utilizes **NetworkManager** technologies and other VPN technologies.
+This application is a **visual desktop interface** for network connection management with a **minimalist design**, leveraging **NetworkManager** and VPN technologies.
 
-The main features include:
+---
+
+## ✨ Features (Planned & In Development)
 
 ### 🔗 Connections
-- View available WiFi networks with signal strength indicators
-- Connect/disconnect from networks with password authentication
-- Display real-time connection status
+- View available Wi-Fi networks with signal strength indicators  
+- Connect/disconnect from networks with password authentication  
+- Display real-time connection status  
 
 ### ✏️ Edit Connections
-- List previously connected WiFi networks
-- Edit settings of saved networks
-- Option to delete old connections
+- List previously connected Wi-Fi networks  
+- Edit saved network settings  
+- Option to delete old connections  
 
-### ➕ Add New
-- Create new network connections manually
-- Support for WiFi, Ethernet and advanced configurations
+### ➕ Add New Connections
+- Create new connections manually  
+- Support for Wi-Fi, Ethernet, and advanced configurations  
 
-### 🔧 Hostname
-- Configure device name on the network
-- Manage system identification
+### 🔧 Hostname Management
+- Configure device hostname on the network  
+- Manage system identification  
 
-### 🛡️ VPN - NordVPN
+### 🛡️ VPN Integration – NordVPN
 ![NordVPN Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lidqr1141nm6qeqsti3p.png)
 
-This project integrates VPN management using the **NordVPN client**.  
-The planned features include:
-
+Planned VPN features:
 - Full VPN interface with server selection  
 - Secure connection to different locations  
-- Visual VPN connection status directly in the UI  
-- Seamless integration with the existing network management system  
-
+- Visual VPN connection status in the UI  
+- Seamless integration with network manager  
 
 ### ⚙️ Customization
-- Toggle between light/dark/system themes
-- Multi-language support (English/Portuguese BR)
-- Settings persist between sessions
+- Light/Dark/System themes  
+- Multi-language support (English & Portuguese BR)  
+- Persistent settings across sessions  
 
 ---
 
 ## 🛠️ Technologies Used
+- [Next.js](https://nextjs.org/)  
 - [React.js](https://reactjs.org/)  
-- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript](https://www.typescriptlang.org/)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [Radix UI](https://www.radix-ui.com/)  
+- [Tauri](https://tauri.app/)  
+
+---
+
+## 🚀 Development
+
+### Run Frontend (Next.js)
+```bash
+cd frontend
+npm install
+npm run dev
+```
+### Run Desktop App (Tauri + Next.js)
+```bash
+cd src-tauri
+cargo tauri dev
+```
